@@ -6,7 +6,7 @@ module.exports = {
     if(rb.username === config.username && rb.password === config.password) {
       next()
     } else {
-      res.status(403).send('NOPE!')
+      res.status(403)
     }
   }
 }
